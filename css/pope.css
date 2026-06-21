@@ -1,0 +1,228 @@
+/* =========================
+   RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY
+========================= */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f4ee;
+  color: #2b1b17;
+  line-height: 1.8;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+  background: linear-gradient(to left, #5b2323, #8b3a3a);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+.logo {
+  width: 90px;
+}
+
+/* =========================
+   BACK LINK
+========================= */
+.go-to-main {
+  display: block;
+  text-align: center;
+  margin: 20px 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #8b3a3a;
+  transition: 0.3s;
+}
+
+.go-to-main:hover {
+  color: #5b2323;
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1,
+h2,
+h3 {
+  color: #4b1e1e;
+}
+h3 {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.pope-name-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 30px auto;
+  padding: 25px;
+  width: 90%;
+  max-width: 900px;
+  border-radius: 20px;
+  background: #fffaf2;
+  border: 1px solid #e7d8ca;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pope-name-card img {
+  width: 250px;
+  height: 250px;
+  object-fit: fill;
+  border-radius: 50%;
+}
+
+.pope-name-card h1 {
+  margin: 5px 0;
+}
+
+.pope-name-card p {
+  font-size: 25px;
+}
+
+.pope-info {
+  text-align: center;
+}
+
+body > p {
+  text-align: justify;
+}
+
+/* =========================
+   TEXT
+========================= */
+p {
+  max-width: 1100px;
+  margin: 15px auto;
+  padding: 0 20px;
+  font-size: 24px;
+}
+
+span {
+  font-weight: bold;
+  color: #5b2323;
+}
+
+hr {
+  width: 90%;
+  margin: 25px auto;
+  border: none;
+  border-top: 2px solid #d6c3b5;
+}
+
+/* =========================
+   LISTS
+========================= */
+ul {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+li {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  width: 90%;
+  /* max-width: 1200px; */
+  margin: 0px auto;
+  padding: 0px 17px;
+  /* background: #fff; */
+  /* border-radius: 20px; */
+  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
+}
+
+.text-with-image img {
+  width: 320px;
+  height: 420px;
+  object-fit: cover;
+
+  border-radius: 20px;
+
+  transform: translateY(-15px);
+
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
+}
+
+.text-with-image div {
+  flex: 1;
+}
+
+.text-with-image p {
+  margin-bottom: 15px;
+  line-height: 2;
+  text-align: justify;
+}
+
+footer {
+  background: linear-gradient(to right, #5b2323, #8b3a3a);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+}
+
+footer p {
+  color: white;
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+  }
+
+  .search-container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .pope-name-card h1 {
+    font-size: 1.4rem;
+  }
+
+  .go-to-main {
+    font-size: 1.2rem;
+  }
+
+  p,
+  li {
+    font-size: 1.2rem;
+  }
+  .pope-name-card {
+    flex-direction: column;
+  }
+
+  .text-with-image {
+    flex-direction: column;
+  }
+
+  .text-with-image img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+  }
+}

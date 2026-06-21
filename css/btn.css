@@ -1,0 +1,52 @@
+
+.faith-btn {
+  text-decoration: none;
+  color: #f4d35e;
+  background: rgba(255, 255, 255, 0.12);
+
+  padding: 12px 22px;
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+  white-space: nowrap;
+}
+
+.faith-btn:hover {
+  background: #f4d35e;
+  color: #8b3a3a;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.all-btn {
+  text-decoration: none;
+  color: #f4d35e;
+  background: rgba(255, 255, 255, 0.12);
+
+  padding: 12px 22px;
+  border-radius: 14px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  transition: 0.3s ease;
+  text-align: center;
+  white-space: normal;}
+
+.all-btn:hover {
+  background: #f4d35e;
+  color: #8b3a3a;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
