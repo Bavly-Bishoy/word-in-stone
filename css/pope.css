@@ -55,13 +55,27 @@ nav {
    HEADINGS
 ========================= */
 h1,
-h2,
-h3 {
+h2 {
   color: #4b1e1e;
 }
 h3 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+  font-size: 2rem;
+  margin: 40px 0 20px;
+  color: #5b2323;
+}
+
+h4 {
+  max-width: 1100px;
+  margin: 35px auto 15px;
+  padding: 0 20px;
+  font-size: 1.8rem;
+  color: #5b2323;
+  font-weight: bold;
+  border-right: 5px solid #8b3a3a;
+  padding-right: 15px;
 }
 
 .pope-name-card {
@@ -133,9 +147,22 @@ ul {
   padding: 0 50px;
 }
 
-li {
+ul li {
   margin: 10px 0;
   font-size: 24px;
+}
+
+
+ol {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 50px;
+}
+
+ol li {
+  margin: 10px 0;
+  font-size: 24px;
+  line-height: 2;
 }
 
 .text-with-image {
@@ -187,6 +214,13 @@ footer p {
   font-size: 1rem;
 }
 
+section:first-of-type p {
+  max-width: 1100px;
+  background: #fffaf2;
+  border: 1px solid #e7d8ca;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -206,6 +240,14 @@ footer p {
 
   .go-to-main {
     font-size: 1.2rem;
+  }
+
+    h4 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.6rem;
   }
 
   p,
