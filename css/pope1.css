@@ -1,7 +1,14 @@
 .transparent-img {
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.img3 {
   width: 350px !important;
   height: 600px !important;
-  box-shadow: 0 0 0 rgba(0, 0, 0, 0) !important;
+}
+
+.img2{
+  height: 600px !important;
 }
 
 .navigation-buttons a:first-child {
