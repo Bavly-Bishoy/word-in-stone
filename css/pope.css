@@ -61,7 +61,6 @@ h2 {
 h3 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
   font-size: 2rem;
   margin: 40px 0 20px;
   color: #5b2323;
@@ -75,7 +74,6 @@ h4 {
   color: #5b2323;
   font-weight: bold;
   border-right: 5px solid #8b3a3a;
-  padding-right: 15px;
 }
 
 .pope-name-card {
@@ -152,7 +150,6 @@ ul li {
   font-size: 24px;
 }
 
-
 ol {
   max-width: 1100px;
   margin: auto;
@@ -170,23 +167,16 @@ ol li {
   align-items: center;
   gap: 35px;
   width: 90%;
-  /* max-width: 1200px; */
   margin: 0px auto;
   padding: 0px 17px;
-  /* background: #fff; */
-  /* border-radius: 20px; */
-  /* box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); */
 }
 
 .text-with-image img {
   width: 320px;
   height: 420px;
   object-fit: cover;
-
   border-radius: 20px;
-
   transform: translateY(-15px);
-
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
@@ -221,6 +211,36 @@ section:first-of-type p {
   border-radius: 10px;
   padding: 10px 20px;
 }
+.navigation-buttons {
+  display: flex;
+  margin: 40px 0;
+}
+
+.navigation-buttons a:first-child {
+  margin-left: 10px;
+  margin-right: auto;
+}
+
+.navigation-buttons a:last-child {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.nav-btn {
+  text-decoration: none;
+  background-color: #8b3a3a;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.nav-btn:hover {
+  background-color: #5b2323;
+  transform: translateY(-2px);
+}
+
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -242,8 +262,11 @@ section:first-of-type p {
     font-size: 1.2rem;
   }
 
-    h4 {
+  h4 {
     font-size: 1.4rem;
+
+    margin: 25px 10px;
+    padding: 0 10px;
   }
 
   h3 {
@@ -260,6 +283,9 @@ section:first-of-type p {
 
   .text-with-image {
     flex-direction: column;
+    width: 100%;
+    padding: 0 20px;
+    gap: 20px;
   }
 
   .text-with-image img {
@@ -267,4 +293,14 @@ section:first-of-type p {
     max-width: 350px;
     height: auto;
   }
+
+    .text-with-image div {
+    width: 100%;
+  }
+
+  .text-with-image p {
+    padding: 0;
+    margin: 15px 0;
+  }
+
 }
