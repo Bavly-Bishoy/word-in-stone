@@ -162,6 +162,10 @@ ol li {
   line-height: 2;
 }
 
+li::marker{
+  color: #5b2323;
+}
+
 .text-with-image {
   display: flex;
   align-items: center;
