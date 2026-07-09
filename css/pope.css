@@ -162,7 +162,7 @@ ol li {
   line-height: 2;
 }
 
-li::marker{
+li::marker {
   color: #5b2323;
 }
 
@@ -245,6 +245,15 @@ section:first-of-type p {
   transform: translateY(-2px);
 }
 
+h5 {
+  max-width: 1100px;
+  margin: 25px auto 10px;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  color: #6b2d2d;
+  font-weight: bold;
+}
+
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -265,6 +274,10 @@ section:first-of-type p {
   .go-to-main {
     font-size: 1.2rem;
   }
+
+h5 {
+  font-size: 1.2rem;
+}
 
   h4 {
     font-size: 1.4rem;
@@ -298,7 +311,7 @@ section:first-of-type p {
     height: auto;
   }
 
-    .text-with-image div {
+  .text-with-image div {
     width: 100%;
   }
 
@@ -306,5 +319,4 @@ section:first-of-type p {
     padding: 0;
     margin: 15px 0;
   }
-
 }
