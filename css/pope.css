@@ -23,15 +23,18 @@ body {
 nav {
   background: linear-gradient(to left, #5b2323, #8b3a3a);
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
+  gap: 20px;
   padding: 12px 40px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  flex-wrap: wrap;
 }
 
 .logo {
   width: 90px;
 }
+
 
 /* =========================
    BACK LINK
@@ -58,6 +61,14 @@ h1,
 h2 {
   color: #4b1e1e;
 }
+
+h2 {
+  max-width: 1100px;
+  margin: 30px auto 15px;
+  padding: 0 20px;
+  font-size: 1.8rem;
+}
+
 h3 {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -76,6 +87,18 @@ h4 {
   border-right: 5px solid #8b3a3a;
 }
 
+h5 {
+  max-width: 1100px;
+  margin: 25px auto 10px;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  color: #6b2d2d;
+  font-weight: bold;
+}
+
+/* =========================
+   POPE CARD
+========================= */
 .pope-name-card {
   display: flex;
   align-items: center;
@@ -94,7 +117,7 @@ h4 {
 .pope-name-card img {
   width: 250px;
   height: 250px;
-  object-fit: fill;
+  object-fit: fill; 
   border-radius: 50%;
 }
 
@@ -110,18 +133,15 @@ h4 {
   text-align: center;
 }
 
-body > p {
-  text-align: justify;
-}
-
 /* =========================
-   TEXT
+   TEXT & CONTENT
 ========================= */
 p {
   max-width: 1100px;
   margin: 15px auto;
   padding: 0 20px;
   font-size: 24px;
+  text-align: justify;
 }
 
 span {
@@ -135,30 +155,34 @@ hr {
   border: none;
   border-top: 2px solid #d6c3b5;
 }
+.pope-info p{
+  width: fit-content;
+}
+section:first-of-type p {
+  max-width: 1100px;
+  background: #fffaf2;
+  border: 1px solid #e7d8ca;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
 
 /* =========================
    LISTS
 ========================= */
-ul {
-  max-width: 1100px;
-  margin: auto;
-  padding: 0 50px;
-}
-
-ul li {
-  margin: 10px 0;
-  font-size: 24px;
-}
-
+ul,
 ol {
   max-width: 1100px;
   margin: auto;
   padding: 0 50px;
 }
 
+ul li,
 ol li {
   margin: 10px 0;
   font-size: 24px;
+}
+
+ol li {
   line-height: 2;
 }
 
@@ -166,21 +190,24 @@ li::marker {
   color: #5b2323;
 }
 
+/* =========================
+   IMAGE WITH TEXT
+========================= */
 .text-with-image {
   display: flex;
   align-items: center;
   gap: 35px;
   width: 90%;
-  margin: 0px auto;
-  padding: 0px 17px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 17px;
 }
 
 .text-with-image img {
   width: 320px;
   height: 420px;
-  object-fit: cover;
+  object-fit: fill;
   border-radius: 20px;
-  transform: translateY(-15px);
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.18);
 }
 
@@ -192,42 +219,19 @@ li::marker {
   margin-bottom: 15px;
   line-height: 2;
   text-align: justify;
+  padding: 0;
 }
 
-footer {
-  background: linear-gradient(to right, #5b2323, #8b3a3a);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 12px 40px;
-  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
-}
-
-footer p {
-  color: white;
-  font-size: 1rem;
-}
-
-section:first-of-type p {
-  max-width: 1100px;
-  background: #fffaf2;
-  border: 1px solid #e7d8ca;
-  border-radius: 10px;
-  padding: 10px 20px;
-}
+/* =========================
+   NAVIGATION BUTTONS
+========================= */
 .navigation-buttons {
   display: flex;
-  margin: 40px 0;
-}
-
-.navigation-buttons a:first-child {
-  margin-left: 10px;
-  margin-right: auto;
-}
-
-.navigation-buttons a:last-child {
-  margin-left: auto;
-  margin-right: 10px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
 .nav-btn {
@@ -245,24 +249,46 @@ section:first-of-type p {
   transform: translateY(-2px);
 }
 
-h5 {
-  max-width: 1100px;
-  margin: 25px auto 10px;
-  padding: 0 20px;
-  font-size: 1.5rem;
-  color: #6b2d2d;
-  font-weight: bold;
+/* =========================
+   FOOTER
+========================= */
+footer {
+  background: linear-gradient(to right, #5b2323, #8b3a3a);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 12px 40px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
 }
 
+footer p {
+  color: white;
+  font-size: 1rem;
+  margin: auto;
+  padding: 0;
+}
+
+/* =========================
+   MEDIA QUERIES (RESPONSIVE)
+========================= */
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
+    align-items: stretch;
     gap: 15px;
     padding: 15px;
   }
+  .logo{
+    margin: auto;
+  }
+.search-container{
+margin: auto;
+  width: 100%;
+}
 
-  .search-container {
-    width: 100%;
+  .faith-btn,
+  .all-btn {
+    white-space: normal;
   }
 }
 
@@ -275,13 +301,12 @@ h5 {
     font-size: 1.2rem;
   }
 
-h5 {
-  font-size: 1.2rem;
-}
+  h5 {
+    font-size: 1.2rem;
+  }
 
   h4 {
     font-size: 1.4rem;
-
     margin: 25px 10px;
     padding: 0 10px;
   }
@@ -294,6 +319,7 @@ h5 {
   li {
     font-size: 1.2rem;
   }
+
   .pope-name-card {
     flex-direction: column;
   }

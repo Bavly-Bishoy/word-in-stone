@@ -1,25 +1,23 @@
+
+/* =========================
+   SEARCH CONTAINER
+========================= */
 .search-container {
-  width: 550px;
-  max-width: 90%;
-  margin: 30px auto;
+  width: 450px;
+  max-width: 100%;
   position: relative;
 }
 
 .search-container input {
   width: 100%;
-  padding: 16px 22px;
-
+  padding: 12px 20px;
   background: white;
   color: #2b1b17;
-
   border: 2px solid #d6c3b5;
   border-radius: 18px;
-
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-family: inherit;
-
   outline: none;
-
   transition: 0.3s;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
@@ -31,33 +29,24 @@
 
 .search-results {
   display: none;
-
   position: absolute;
   top: calc(100% + 10px);
   right: 0;
   left: 0;
-
   background: white;
-
   border: 1px solid #e3d5c8;
   border-radius: 18px;
-
   overflow: hidden;
-
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
-
   z-index: 1000;
 }
 
 .search-results a {
   display: block;
-
   padding: 15px 20px;
-
   color: #2b1b17;
   text-decoration: none;
   font-size: 1.05rem;
-
   transition: 0.25s;
 }
 
@@ -66,13 +55,7 @@
 }
 
 .search-results a:hover {
-  background: linear-gradient(
-    to left,
-    #5b2323,
-    #8b3a3a
-  );
-
+  background: linear-gradient(to left, #5b2323, #8b3a3a);
   color: white;
-
   padding-right: 28px;
 }
